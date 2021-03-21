@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0">
+
+        <link rel="shortcut icon" href="images/profile_pic.jpg">
+        
+        <title>Poornima Vinaykumar</title>
+        <meta name="description" content="A highly motivated entrepreneur with a passion for creating human centric products and services.">
+
+        <meta property="og:title" content="Poornima Vinaykumar">
+        <meta property="og:description" content="A highly motivated entrepreneur with a passion for creating human centric products and services.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://PoornimaVinaykumar.com/">
+        <meta property="og:image" content="https://PoornimaVinaykumar.com/images/profile_pic.jpg">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="main-content">
+                <table class="transparent-table">
+                    <tr>
+                        <td colspan="2" valign="top">
+                            <br>
+                            <br class="hide-on-mobile">
+                            <img id="index_image" src="images/gallery_pic_0.jpg" class="home-image" alt="Poornima Vinaykumar">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <h1 class="font-size-heading">Poornima Vinaykumar</span>
+                        </td>
+                        <td class="text-align-right">
+                            <a href="about.html" class="home-button">About</a>
+                            <a href="https://www.linkedin.com/in/poornimavinaykumar/" class="home-button" target="_BLANK">Work</a>
+                            <a href="posts.html" class="home-button">Musings</a>
+                            <a href="mailto:purnimamurthy06@gmail.com" class="home-button home-button-last" target="_BLANK">Contact</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            const rotate_photo = function(index){
+                document.getElementById('index_image').src = 'images/gallery_pic_' + index + '.jpg';
+
+                index = (index + 1) % 5;
+                setTimeout(function(){rotate_photo(index)}, 3000);
+            }
+
+            rotate_photo(0);
+        </script>
+
+    </body>
+</html>
